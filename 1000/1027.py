@@ -1,2 +1,5 @@
-year, month, day = input.split(".")
-print(day.zfill(2), month.zfill(2), year.zfill(4), sep="-")
+# 1027  
+year, month, day = input().split(".")
+print("%02d" % int(day), end="-")
+print("%02d" % int(month), end="-")
+print("%04d" % int(year))
